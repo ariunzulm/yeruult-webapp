@@ -25,8 +25,10 @@ const Playercard = ({ player }) => {
         />
       </div>
       <div className="flex flex-col gap-2">
-        <h3 className="text-xl font-bold leading-tight text-white">{name}</h3>
-        <p className="text-sm text-gray-400 leading-relaxed">{desc}</p>
+        <h3 className="text-2xl font-bold leading-tight text-white">{name}</h3>
+        <p className="text-base font-extrabold text-gray-400 leading-relaxed">
+          {desc}
+        </p>
       </div>
       <div className="mt-auto flex flex-col gap-2">
         <button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-colors">
@@ -42,20 +44,29 @@ const Playercard = ({ player }) => {
 const playersInfo = [
   {
     id: 1,
-    imageUrl: "/profile.png",
+    imageUrl:
+      "https://www.redditstatic.com/devvit-dev-portal/assets/landing-page/gif-honk.gif",
     name: "Yeruult",
     desc: "Complete levels to get your favorite meal",
   },
   {
     id: 2,
-    imageUrl: "/profile.png",
+    imageUrl:
+      "https://www.redditstatic.com/devvit-dev-portal/assets/landing-page/gif-swordandsupper.gif",
     name: "Yeruult-Max",
     desc: "Complete levels to earn reward",
   },
   {
     id: 3,
-    imageUrl: "/profile.png",
+    imageUrl:
+      "https://www.redditstatic.com/devvit-dev-portal/assets/landing-page/gif-riddonkulous.gif",
     name: "Yeruult-ProMax",
+    desc: "Complete levels to earn reward & your favorite meal",
+  },
+  {
+    id: 4,
+    imageUrl: "/profile.png",
+    name: "Yeruult-Ultra",
     desc: "Complete levels to earn reward & your favorite meal",
   },
 ];
