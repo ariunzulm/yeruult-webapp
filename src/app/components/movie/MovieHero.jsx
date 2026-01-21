@@ -68,12 +68,12 @@ export default function MovieHeroSection() {
               <div className="w-px h-6 bg-gray-700"></div>
               <div className="flex items-center gap-2">
                 <span className="text-gray-400">Age Rating</span>
-                <span className="text-white font-bold text-lg">3.5</span>
-                <span className="text-gray-500">/5</span>
+                <span className="text-white font-bold text-lg">12</span>
+                <span className="text-gray-500">/18</span>
               </div>
               <div className="w-px h-6 bg-gray-700"></div>
               <div className="flex items-center gap-2">
-                <span className="text-gray-400">Runtime</span>
+                <span className="text-gray-400">Spent-time</span>
                 <span className="text-white font-bold text-lg">4.7</span>
                 <span className="text-gray-500">hours</span>
               </div>
