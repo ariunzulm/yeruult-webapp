@@ -1,5 +1,5 @@
-import HeroCategory from "./components/movie/HeroCategory";
-import MovieHeroSection from "./components/movie/MovieHero";
+import HeroCategory from "./components/hero/HeroCategory";
+import MovieHeroSection from "./components/hero/MovieHero";
 
 export default function Home() {
   return (
