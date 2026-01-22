@@ -3,23 +3,20 @@ import ScenePlayer from "../quiz/ScenePlayer";
 export default function PlayerCardList() {
   return (
     <div className="w-full min-h-screen bg-gray-950 p-4 md:p-8">
-      <div className="grid grid-col md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl mx-auto">
         {playersInfo.map((player) => (
           <Playercard key={player.id} player={player} />
         ))}
-        <ScenePlayer />
       </div>
+      <ScenePlayer />
     </div>
-  );
+  );  
 }
 
 const Playercard = ({ player }) => {
   const { id, imageUrl, name, desc } = player;
   return (
-    <article
-      key={id}
-      className="flex flex-col gap-4 rounded-2xl border border-gray-700 bg-gray-900 p-4 hover:border-gray-600 transition-colors"
-    >
+    <article className="flex flex-col gap-4 rounded-2xl bg-transparent p-4">
       <div className="relative w-full aspect-square overflow-hidden rounded-xl bg-gray-800">
         <img
           className="w-full h-full object-contain"
@@ -40,10 +37,10 @@ const Playercard = ({ player }) => {
 const PlayerButtons = () => {
   return (
     <div className="mt-auto flex flex-col gap-2">
-      <button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-colors">
+      <button className="w-full bg-[#8B751A] hover:bg-[#b49723] text-white font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-colors">
         Play
       </button>
-      <button className="w-full bg-gray-800 hover:bg-gray-700 text-gray-300 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-colors">
+      <button className="w-full bg-[#4B842F] hover:bg-[#5ca139] text-gray-300 font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-colors">
         Learn more
       </button>
     </div>
